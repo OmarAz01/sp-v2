@@ -1,0 +1,70 @@
+@import 'tailwindcss';
+
+:root {
+  --color-brandName: #d57224; /* Burnt orange */
+  --color-background: #f4f1ec; /* Soft light beige */
+  --color-primaryAccent: #5a5d5b; /* Slate gray */
+  --color-secondaryAccent: #a7b3a5; /* Muted sage */
+  --color-textPrimary: #1f1f1f; /* Near-black for strong contrast */
+  --color-textSecondary: #555555; /* Subtle gray */
+  --color-buttonBackground: #d57224; /* Matches brandName */
+  --color-buttonText: #ffffff; /* White on orange */
+  --color-cardBackground: #ffffff; /* Simple, clean white cards */
+  --color-borderColor: #1f1f1f; /* Light gray borders */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+.text-brandName {
+  color: var(--color-brandName);
+}
+
+.to-background {
+  background-color: var(--color-background);
+}
+
+.bg-background {
+  background-color: var(--color-background);
+}
+
+.text-primaryAccent {
+  color: var(--color-primaryAccent);
+}
+
+.text-secondaryAccent {
+  color: var(--color-secondaryAccent);
+}
+
+.text-textPrimary {
+  color: var(--color-textPrimary);
+}
+
+.text-textSecondary {
+  color: var(--color-textSecondary);
+}
+
+.bg-buttonBackground {
+  background-color: var(--color-buttonBackground);
+}
+
+.text-buttonText {
+  color: var(--color-buttonText);
+}
+
+.bg-cardBackground {
+  background-color: var(--color-cardBackground);
+}
+
+.border-borderColor {
+  border-color: var(--color-borderColor);
+}
