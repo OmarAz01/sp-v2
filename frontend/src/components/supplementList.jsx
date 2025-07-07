@@ -48,46 +48,239 @@ async function fetchProducts(supplementName) {
       link: 'https://example.com/product3',
       overall: 80,
     },
+    {
+      name: 'Example Casein Protein',
+      ingredients: ['Micellar Casein', 'Natural Flavors', 'Stevia'],
+      pricePerUnit: 0.04,
+      healthScore: 85.0,
+      userScore: 84.3,
+      link: 'https://example.com/product3',
+      overall: 80,
+    },
+    {
+      name: 'Example Casein Protein',
+      ingredients: ['Micellar Casein', 'Natural Flavors', 'Stevia'],
+      pricePerUnit: 0.04,
+      healthScore: 85.0,
+      userScore: 84.3,
+      link: 'https://example.com/product3',
+      overall: 80,
+    },
+    {
+      name: 'Example Casein Protein',
+      ingredients: ['Micellar Casein', 'Natural Flavors', 'Stevia'],
+      pricePerUnit: 0.04,
+      healthScore: 85.0,
+      userScore: 84.3,
+      link: 'https://example.com/product3',
+      overall: 80,
+    },
+    {
+      name: 'Example Casein Protein',
+      ingredients: ['Micellar Casein', 'Natural Flavors', 'Stevia'],
+      pricePerUnit: 0.04,
+      healthScore: 85.0,
+      userScore: 84.3,
+      link: 'https://example.com/product3',
+      overall: 80,
+    },
+    {
+      name: 'Example Casein Protein',
+      ingredients: ['Micellar Casein', 'Natural Flavors', 'Stevia'],
+      pricePerUnit: 0.04,
+      healthScore: 85.0,
+      userScore: 84.3,
+      link: 'https://example.com/product3',
+      overall: 80,
+    },
+    {
+      name: 'Example Casein Protein',
+      ingredients: ['Micellar Casein', 'Natural Flavors', 'Stevia'],
+      pricePerUnit: 0.04,
+      healthScore: 85.0,
+      userScore: 84.3,
+      link: 'https://example.com/product3',
+      overall: 80,
+    },
+    {
+      name: 'Example Casein Protein',
+      ingredients: ['Micellar Casein', 'Natural Flavors', 'Stevia'],
+      pricePerUnit: 0.04,
+      healthScore: 85.0,
+      userScore: 84.3,
+      link: 'https://example.com/product3',
+      overall: 80,
+    },
+    {
+      name: 'Example Casein Protein',
+      ingredients: ['Micellar Casein', 'Natural Flavors', 'Stevia'],
+      pricePerUnit: 0.04,
+      healthScore: 85.0,
+      userScore: 84.3,
+      link: 'https://example.com/product3',
+      overall: 80,
+    },
+    {
+      name: 'Example Casein Protein',
+      ingredients: ['Micellar Casein', 'Natural Flavors', 'Stevia'],
+      pricePerUnit: 0.04,
+      healthScore: 85.0,
+      userScore: 84.3,
+      link: 'https://example.com/product3',
+      overall: 80,
+    },
+    {
+      name: 'Example Casein Protein',
+      ingredients: ['Micellar Casein', 'Natural Flavors', 'Stevia'],
+      pricePerUnit: 0.04,
+      healthScore: 85.0,
+      userScore: 84.3,
+      link: 'https://example.com/product3',
+      overall: 80,
+    },
+    {
+      name: 'Example Casein Protein',
+      ingredients: ['Micellar Casein', 'Natural Flavors', 'Stevia'],
+      pricePerUnit: 0.04,
+      healthScore: 85.0,
+      userScore: 84.3,
+      link: 'https://example.com/product3',
+      overall: 80,
+    },
+    {
+      name: 'Example Casein Protein',
+      ingredients: ['Micellar Casein', 'Natural Flavors', 'Stevia'],
+      pricePerUnit: 0.04,
+      healthScore: 85.0,
+      userScore: 84.3,
+      link: 'https://example.com/product3',
+      overall: 79,
+    },
+    {
+      name: 'Example Casein Protein',
+      ingredients: ['Micellar Casein', 'Natural Flavors', 'Stevia'],
+      pricePerUnit: 0.04,
+      healthScore: 85.0,
+      userScore: 84.3,
+      link: 'https://example.com/product3',
+      overall: 78,
+    },
+    {
+      name: 'Example Casein Protein',
+      ingredients: ['Micellar Casein', 'Natural Flavors', 'Stevia'],
+      pricePerUnit: 0.04,
+      healthScore: 85.0,
+      userScore: 84.3,
+      link: 'https://example.com/product3',
+      overall: 77,
+    },
+    {
+      name: 'Example Casein Protein',
+      ingredients: ['Micellar Casein', 'Natural Flavors', 'Stevia'],
+      pricePerUnit: 0.04,
+      healthScore: 85.0,
+      userScore: 84.3,
+      link: 'https://example.com/product3',
+      overall: 77,
+    },
+    {
+      name: 'Example Casein Protein',
+      ingredients: ['Micellar Casein', 'Natural Flavors', 'Stevia'],
+      pricePerUnit: 0.04,
+      healthScore: 85.0,
+      userScore: 84.3,
+      link: 'https://example.com/product3',
+      overall: 75,
+    },
+    {
+      name: 'Example Casein Protein',
+      ingredients: ['Micellar Casein', 'Natural Flavors', 'Stevia'],
+      pricePerUnit: 0.04,
+      healthScore: 85.0,
+      userScore: 84.3,
+      link: 'https://example.com/product3',
+      overall: 75,
+    },
+    {
+      name: 'Example Casein Protein',
+      ingredients: ['Micellar Casein', 'Natural Flavors', 'Stevia'],
+      pricePerUnit: 0.04,
+      healthScore: 85.0,
+      userScore: 84.3,
+      link: 'https://example.com/product3',
+      overall: 70,
+    },
+    {
+      name: 'Example Casein Protein',
+      ingredients: ['Micellar Casein', 'Natural Flavors', 'Stevia'],
+      pricePerUnit: 0.04,
+      healthScore: 85.0,
+      userScore: 84.3,
+      link: 'https://example.com/product3',
+      overall: 65,
+    },
+    {
+      name: 'Example Casein Protein',
+      ingredients: ['Micellar Casein', 'Natural Flavors', 'Stevia'],
+      pricePerUnit: 0.04,
+      healthScore: 85.0,
+      userScore: 84.3,
+      link: 'https://example.com/product3',
+      overall: 56,
+    },
   ]
 }
 
-export default async function SupplementList({supplementName}) {
-  const products = await fetchProducts(supplementName)
+export default async function SupplementList({supplementName, filters}) {
+  const sort = filters?.sort || 'overall'
+  const type = filters?.type || 'all'
+  const products = await fetchProducts(supplementName, {sort, type})
 
   return (
-    <div className='grid gap-6 max-w-screen-xl mx-auto px-4'>
-      {products.length === 0 ? (
-        <div className='text-center text-gray-500'>No products found.</div>
-      ) : (
-        products.map((product, idx) => (
+    <>
+      <div className='grid md:gap-6 gap-4 max-w-screen-xl mx-auto px-4 sm:grid-cols-2 lg:grid-cols-3'>
+        {products.map((product, idx) => (
           <div
             key={idx}
-            className='border border-borderColor rounded-2xl px-4 sm:px-12 pt-4 shadow-sm w-fit hover:shadow-lg hover:cursor-pointer transition bg-cardBackground text-textPrimary'
+            className='relative z-1 group border border-borderColor rounded-2xl bg-cardBackground text-textPrimary py-3 px-4'
           >
-            <div className='mb-4'>
-              <h2 className='text-xl font-semibold'>{product.name}</h2>
+            <div
+              className={`absolute top-0 -right-1 z-2 bg-white border border-borderColor text-sm font-semibold p-2 rounded-full ${
+                product.overall >= 80
+                  ? 'text-green-600'
+                  : product.overall >= 75
+                  ? 'text-yellow-600'
+                  : 'text-red-800'
+              }`}
+            >
+              {product.overall}
             </div>
-            <div className='flex flex-row justify-between w-fit space-x-4 sm:space-x-12 items-center mb-4'>
+
+            <h2 className='text-lg text-left mr-4 font-bold mt-4 mb-2 leading-snug'>
+              {product.name}
+            </h2>
+
+            <div className='flex justify-between text-sm text-textSecondary border-t pt-4'>
               <div className='flex flex-col'>
-                <span className='text-sm text-gray-600'>Price per Unit</span>
-                <span className='text-lg font-bold'>${product.pricePerUnit.toFixed(2)}</span>
+                <span className='text-gray-500'>Price</span>
+                <span className='text-textPrimary font-medium'>
+                  ${product.pricePerUnit.toFixed(2)}
+                </span>
               </div>
               <div className='flex flex-col'>
-                <span className='text-sm text-gray-600'>Health Score</span>
-                <span className='text-lg font-bold'>{product.healthScore.toFixed(1)}</span>
+                <span className='text-gray-500'>Health</span>
+                <span className='text-textPrimary font-medium'>
+                  {product.healthScore.toFixed(1)}
+                </span>
               </div>
               <div className='flex flex-col'>
-                <span className='text-sm text-gray-600'>User Score</span>
-                <span className='text-lg font-bold'>{product.userScore.toFixed(1)}</span>
-              </div>
-              <div className='flex flex-col'>
-                <span className='text-sm text-gray-600'>Overall Score</span>
-                <span className='text-lg font-bold'>{product.overall}</span>
+                <span className='text-gray-500'>User</span>
+                <span className='text-textPrimary font-medium'>{product.userScore.toFixed(1)}</span>
               </div>
             </div>
           </div>
-        ))
-      )}
-    </div>
+        ))}
+      </div>
+    </>
   )
 }

@@ -1,4 +1,5 @@
 import {Geist, Geist_Mono} from 'next/font/google'
+import Link from 'next/link'
 import './globals.css'
 
 export const metadata = {
@@ -9,7 +10,32 @@ export const metadata = {
 export default function RootLayout({children}) {
   return (
     <html lang='en'>
-      <body className={`bg-background p-2`}>{children}</body>
+      <body className={`bg-background p-2 flex flex-col items-center`}>
+        <header className='w-full max-w-screen-xl mx-auto'>
+          <nav className='flex justify-between items-center w-full px-4 py-4 border-b border-borderColor'>
+            <Link href='/' className='text-2xl font-bold text-brandName'>
+              SupplementPicks
+            </Link>
+            <ul className='flex space-x-6 text-textPrimary'>
+              <li>
+                <Link href='/directory'>All Supplements</Link>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <main className='max-w-screen-xl mx-auto mb-24'>{children}</main>
+        <footer className='border-t border-borderColor py-4 fixed bottom-0 w-full max-w-screen-xl bg-background z-10'>
+          <div className='max-w-screen-xl mx-auto px-4 text-center text-textPrimary'>
+            <p className='text-sm'>
+              &copy;{new Date().getFullYear()} SupplementPicks. All rights reserved.
+            </p>
+            <p className='text-xs mt-2'>
+              SupplementPicks is not affiliated with any supplement brands. We provide unbiased
+              comparisons based on publicly available information.
+            </p>
+          </div>
+        </footer>
+      </body>
     </html>
   )
 }
