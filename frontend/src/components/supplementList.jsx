@@ -240,9 +240,14 @@ export default async function SupplementList({supplementName, filters}) {
     <>
       <div className='grid md:gap-6 gap-4 max-w-screen-xl mx-auto px-4 sm:grid-cols-2 lg:grid-cols-3'>
         {products.map((product, idx) => (
-          <div
+          <a
             key={idx}
-            className='relative z-1 group border border-borderColor rounded-2xl bg-cardBackground text-textPrimary py-3 px-4'
+            href={product.link}
+            target='_blank'
+            rel='noopener noreferrer'
+            tabIndex={0}
+            aria-label={`Open ${product.name} in new tab`}
+            className='relative z-1 group border border-borderColor rounded-2xl bg-cardBackground text-textPrimary py-3 px-4 cursor-pointer transition-shadow hover:shadow-lg block'
           >
             <div
               className={`absolute top-0 -right-1 z-2 bg-white border border-borderColor text-sm font-semibold p-2 rounded-full ${
@@ -278,7 +283,7 @@ export default async function SupplementList({supplementName, filters}) {
                 <span className='text-textPrimary font-medium'>{product.userScore.toFixed(1)}</span>
               </div>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </>

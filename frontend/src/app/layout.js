@@ -18,12 +18,14 @@ export default function RootLayout({children}) {
             </Link>
             <ul className='flex space-x-6 text-textPrimary'>
               <li>
-                <Link href='/directory'>All Supplements</Link>
+                <Link className='hover:underline hover:italic' href='/directory'>
+                  Directory
+                </Link>
               </li>
             </ul>
           </nav>
         </header>
-        <main className='max-w-screen-xl mx-auto mb-24'>{children}</main>
+        <main className='max-w-screen-xl mx-auto mb-32 sm:mb-0'>{children}</main>
         <footer className='border-t border-borderColor py-4 fixed bottom-0 w-full max-w-screen-xl bg-background z-10'>
           <div className='max-w-screen-xl mx-auto px-4 text-center text-textPrimary'>
             <p className='text-sm'>
