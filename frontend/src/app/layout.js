@@ -18,7 +18,7 @@ export default function RootLayout({children}) {
             </Link>
             <ul className='flex space-x-6 text-textPrimary'>
               <li>
-                <Link className='hover:underline hover:italic' href='/directory'>
+                <Link className='hover:underline' href='/directory'>
                   Directory
                 </Link>
               </li>
