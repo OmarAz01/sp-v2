@@ -1,16 +1,16 @@
 @import 'tailwindcss';
 
 :root {
-  --color-brandName: #3c8a4a; /* Herbal green (rich but vibrant) */
-  --color-background: #141a17; /* Deep pine green/charcoal */
-  --color-primaryAccent: #2e3c36; /* Forest slate */
-  --color-secondaryAccent: #5c6f62; /* Muted sage */
-  --color-textPrimary: #e8e6e3; /* Light beige for high contrast */
-  --color-textSecondary: #b1b6b2; /* Gray-sage */
-  --color-buttonBackground: #3c8a4a; /* Herbal green */
-  --color-buttonText: #ffffff; /* Clear on green */
-  --color-cardBackground: #1e2421; /* Slight contrast over background */
-  --color-borderColor: #48534e; /* Slate outline */
+  --color-brandName: #6ba539; /* Herbal green */
+  --color-buttonBackground: #6ba539; /* CTA and highlights */
+  --color-buttonText: #ffffff; /* Always white for contrast */
+  --color-background: #f7f6f2; /* Soft off-white (main background) */
+  --color-cardBackground: #f1efe8; /* Pure white card base */
+  --color-borderColor: #e2e2dd; /* Light, warm gray for borders */
+  --color-primaryAccent: #e8f3db; /* Pale herbal accent (icons, badges) */
+  --color-secondaryAccent: #c5d6bb; /* Muted sage (subtle contrast areas) */
+  --color-textPrimary: #1f1f1f; /* Deep neutral black */
+  --color-textSecondary: #666666; /* Muted medium gray for helper text */
 }
 
 @keyframes marquee {

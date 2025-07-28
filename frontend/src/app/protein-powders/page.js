@@ -13,7 +13,7 @@ export default async function ProteinPowders({searchParams}) {
             Compare protein powders by cost per gram of protein, ingredient quality, user ratings,
             and overall score.
           </p>
-          <div className='flex gap-3 mt-6 text-sm text-gray-200 text-start'>
+          <div className='flex gap-3 mt-6 text-sm text-gray-900 text-start'>
             <a href='/protein-powders' className='hover:underline'>
               Overall
             </a>

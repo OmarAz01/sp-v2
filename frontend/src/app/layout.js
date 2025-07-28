@@ -13,10 +13,10 @@ export default function RootLayout({children}) {
       <body className={`bg-background p-2 flex flex-col items-center`}>
         <header className='w-full max-w-screen-xl mx-auto'>
           <nav className='flex justify-between items-center w-full px-4 py-4 border-b border-borderColor'>
-            <Link href='/' className='text-2xl font-bold text-brandName'>
+            <Link href='/' className='sm:text-2xl text-base font-bold text-brandName'>
               SupplementPicks
             </Link>
-            <ul className='flex space-x-6 text-textPrimary'>
+            <ul className='flex space-x-6 text-textPrimary sm:text-xl text-base'>
               <li>
                 <Link className='hover:underline' href='/directory'>
                   Directory
