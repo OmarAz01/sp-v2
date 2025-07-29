@@ -247,7 +247,7 @@ export default async function SupplementList({supplementName, filters}) {
             rel='noopener noreferrer'
             tabIndex={0}
             aria-label={`Open ${product.name} in new tab`}
-            className='relative z-1 group border border-borderColor rounded-2xl bg-cardBackground text-textPrimary py-3 px-4 cursor-pointer transition-shadow hover:shadow-lg hover:scale-102 block'
+            className='relative z-1 group border border-2-borderColor rounded-2xl bg-cardBackground text-textPrimary py-3 px-4 cursor-pointer transition-shadow hover:shadow-lg hover:scale-102 block'
           >
             <div
               className={`absolute top-0 -right-1 z-2 bg-white border border-borderColor text-sm font-semibold p-2 rounded-full ${

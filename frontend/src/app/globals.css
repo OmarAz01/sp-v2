@@ -10,7 +10,7 @@
   --color-primaryAccent: #e8f3db; /* Pale herbal accent (icons, badges) */
   --color-secondaryAccent: #c5d6bb; /* Muted sage (subtle contrast areas) */
   --color-textPrimary: #1f1f1f; /* Deep neutral black */
-  --color-textSecondary: #666666; /* Muted medium gray for helper text */
+  --color-textSecondary: #3c3c3c; /* Muted medium gray for helper text */
 }
 
 @keyframes marquee {

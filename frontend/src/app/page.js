@@ -37,13 +37,6 @@ export default async function Home() {
 
   return (
     <>
-      <Head>
-        <title>SupplementPicks – Compare the Best Supplements</title>
-        <meta
-          name='description'
-          content='Discover top protein powders, pre-workouts, and more ranked by ingredients, price, and user reviews.'
-        />
-      </Head>
       <main className='p-2 text-textPrimary min-h-[1000px]'>
         {/* 1. Hero Section */}
         <section className='text-center px-4 sm:px-6 pt-10 sm:pt-16 pb-14 sm:pb-24 max-w-screen-lg mx-auto'>
@@ -86,10 +79,10 @@ export default async function Home() {
                   <p className='text-xs sm:text-sm text-textSecondary'>
                     {
                       [
-                        'Data over sponsorships',
-                        'See key stats side by side',
-                        'Instantly spot the best value',
-                        'Fresh rankings as new products drop',
+                        'No paid placements—just honest, research-backed results.',
+                        'Easily compare nutrition, price, and user ratings side by side.',
+                        'Quickly identify top picks without endless searching.',
+                        'Our lists reflect the latest products and real user feedback.',
                       ][idx]
                     }
                   </p>
@@ -113,7 +106,7 @@ export default async function Home() {
                 rel='noopener noreferrer'
                 tabIndex={0}
                 aria-label={`Open ${product.name} in new tab`}
-                className='relative z-1 group border border-borderColor rounded-2xl bg-cardBackground text-textPrimary py-3 px-4 cursor-pointer transition-shadow hover:shadow-lg hover:scale-102 block'
+                className='relative z-1 group border border-2-borderColor rounded-2xl bg-cardBackground text-textPrimary py-3 px-4 cursor-pointer transition-shadow hover:shadow-lg hover:scale-102 block'
               >
                 <div
                   className={`absolute top-0 -right-1 z-2 bg-white border border-borderColor text-sm font-semibold p-2 rounded-full ${
@@ -172,8 +165,8 @@ export default async function Home() {
                 href={link}
                 className={`rounded-2xl p-4 sm:p-6 text-center shadow-sm transition border ${
                   link === '#'
-                    ? 'bg-primaryAccent text-textSecondary border-borderColor cursor-not-allowed'
-                    : 'bg-cardBackground hover:shadow-md border-borderColor text-textPrimary'
+                    ? 'bg-primaryAccent text-textSecondary border-2-borderColor cursor-not-allowed'
+                    : 'bg-cardBackground hover:shadow-md border-2-borderColor text-textPrimary'
                 }`}
               >
                 <h3 className='text-lg sm:text-xl font-semibold mb-1 sm:mb-2'>{label}</h3>
