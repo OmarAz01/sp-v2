@@ -97,54 +97,70 @@ export default async function Home() {
           <h2 className='text-2xl sm:text-3xl font-semibold text-center mb-8 sm:mb-12'>
             Top Ranked Supplements
           </h2>
-          <div className='grid md:gap-6 gap-4 max-w-screen-xl mx-auto px-4 sm:grid-cols-2 lg:grid-cols-3'>
+          <div className='grid gap-4 sm:gap-0 sm:max-w-[600px] lg:max-w-screen-md mx-auto px-4 gird-cols-1'>
             {topProducts.map((product, idx) => (
-              <a
+              <div
                 key={idx}
-                href={product.link}
-                target='_blank'
-                rel='noopener noreferrer'
-                tabIndex={0}
-                aria-label={`Open ${product.name} in new tab`}
-                className='relative z-1 group border border-2-borderColor rounded-2xl bg-cardBackground text-textPrimary py-3 px-4 cursor-pointer transition-shadow hover:shadow-lg hover:scale-102 block'
+                className={`sm:border-b border-b-black relative border sm:border-0 text-textPrimary sm:rounded-none rounded-2xl flex flex-col p-4 ${
+                  idx % 2 === 0 ? 'bg-transparent' : 'bg-cardBackground'
+                }`}
               >
-                <div
-                  className={`absolute top-0 -right-1 z-2 bg-white border border-borderColor text-sm font-semibold p-2 rounded-full ${
-                    product.overall >= 80
-                      ? 'text-green-600'
-                      : product.overall >= 75
-                      ? 'text-yellow-600'
-                      : 'text-red-800'
-                  }`}
-                >
-                  {product.overall}
+                <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between'>
+                  <span
+                    className={`text-sm sm:-top-1 sm:-left-4 -top-1 -left-1 border absolute font-semibold rounded-full inline-block px-2 py-1 
+                    ${
+                      product.overall >= 80
+                        ? 'bg-green-100 text-green-700'
+                        : product.overall >= 75
+                        ? 'bg-yellow-100 text-yellow-700'
+                        : 'bg-red-100 text-red-800'
+                    }`}
+                    style={{verticalAlign: 'middle'}}
+                  >
+                    {product.overall}
+                  </span>
+                  {/* Left: Name and scores */}
+                  <div className='flex flex-col lg:flex-row sm:items-start lg:items-center items-center  lg:justify-between lg:gap-8 flex-1 min-w-0'>
+                    {/* Name */}
+                    <span className='font-bold text-center truncate text-base sm:text-lg sm:mb-0 md:max-w-64 max'>
+                      {product.name}
+                    </span>
+                    {/* Scores */}
+                    <div className='flex flex-row flex-wrap gap-x-4 gap-y-1 my-2 sm:my-0 items-center text-center'>
+                      <span className='text-xs sm:text-sm text-gray-500'>
+                        Price:{' '}
+                        <span className='font-medium text-textPrimary'>
+                          ${product.pricePerUnit.toFixed(2)}
+                        </span>
+                      </span>
+                      <span className='text-xs sm:text-sm text-gray-500'>
+                        Health:{' '}
+                        <span className='font-medium text-textPrimary'>
+                          {product.healthScore.toFixed(1)}
+                        </span>
+                      </span>
+                      <span className='text-xs sm:text-sm text-gray-500'>
+                        User:{' '}
+                        <span className='font-medium text-textPrimary'>
+                          {product.userScore.toFixed(1)}
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                  {/* Right: Button */}
+                  <div className='mt-1 sm:mt-0 sm:ml-4 flex-shrink-0 w-full sm:w-fit flex items-center'>
+                    <a
+                      href={product.link}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='block w-full sm:w-fit text-center bg-buttonBackground text-buttonText px-2 py-2 rounded-lg font-semibold text-xs sm:text-sm hover:opacity-90 transition'
+                      aria-label={`Open ${product.name} in new tab`}
+                    >
+                      View at {product.linkName || 'Product Site'}
+                    </a>
+                  </div>
                 </div>
-
-                <h2 className='text-base text-left mr-4 font-bold mt-4 mb-2 leading-snug'>
-                  {product.name}
-                </h2>
-
-                <div className='flex justify-between text-sm text-textSecondary border-t pt-4'>
-                  <div className='flex flex-col'>
-                    <span className='text-gray-500'>Price</span>
-                    <span className='text-textPrimary font-medium'>
-                      ${product.pricePerUnit.toFixed(2)}
-                    </span>
-                  </div>
-                  <div className='flex flex-col'>
-                    <span className='text-gray-500'>Health</span>
-                    <span className='text-textPrimary font-medium'>
-                      {product.healthScore.toFixed(1)}
-                    </span>
-                  </div>
-                  <div className='flex flex-col'>
-                    <span className='text-gray-500'>User</span>
-                    <span className='text-textPrimary font-medium'>
-                      {product.userScore.toFixed(1)}
-                    </span>
-                  </div>
-                </div>
-              </a>
+              </div>
             ))}
           </div>
         </section>

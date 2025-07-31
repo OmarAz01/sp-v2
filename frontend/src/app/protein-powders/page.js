@@ -1,7 +1,9 @@
 import SupplementList from '../../components/supplementList'
+import fetchProducts from '../../components/fetchProducts'
+import Link from 'next/link'
 
-export default async function ProteinPowders({searchParams}) {
-  const params = (await searchParams) || {}
+export default async function ProteinPowders() {
+  const products = await fetchProducts('protein powder')
   return (
     <>
       <div className='flex flex-col w-full items-center text-center sm:mb-32 mb-0'>
@@ -13,26 +15,17 @@ export default async function ProteinPowders({searchParams}) {
             Compare protein powders by cost per gram of protein, ingredient quality, user ratings,
             and overall score.
           </p>
-          <div className='flex gap-3 mt-6 text-sm text-gray-900 text-start'>
-            <a href='/protein-powders' className='hover:underline'>
-              Overall
-            </a>
-            <span className='text-borderColor'>|</span>
-            <a href='/protein-powders?type=price' className='hover:underline'>
-              Price
-            </a>
-            <span className='text-borderColor'>|</span>
-            <a href='/protein-powders?type=health' className='hover:underline'>
-              Health
-            </a>
-            <span className='text-borderColor'>|</span>
-            <a href='/protein-powders?type=user' className='hover:underline'>
-              User
-            </a>
-          </div>
         </div>
         <div className='flex flex-col items-center w-full max-w-screen-lg'>
-          <SupplementList supplementName='protein powder' filters={params} />
+          <SupplementList products={products} />
+          <p className='text-sm mt-8 text-secondaryText'>
+            If you believe any information is inaccurate, have suggestions, or believe a product
+            should be included please{' '}
+            <Link href='/contact' className='text-brandName font-bold hover:underline'>
+              contact us
+            </Link>
+            . We welcome feedback to improve our rankings and accuracy.
+          </p>
         </div>
       </div>
     </>
