@@ -44,7 +44,7 @@ export default function RootLayout({children}) {
               <Image src='/hero.png' alt='Hero Image' width={34} height={24} />
             </div>
 
-            <ul className='flex space-x-6 text-textPrimary sm:text-lg text-base'>
+            <ul className='flex space-x-6 text-textPrimary sm:text-lg text-sm'>
               <li>
                 <Link className='hover:underline' href='/directory'>
                   Directory
@@ -66,10 +66,6 @@ export default function RootLayout({children}) {
             <p className='text-xs mt-2'>
               <Link href='/privacy-policy' className='text-brandName font-bold hover:underline'>
                 Privacy Policy
-              </Link>{' '}
-              |{' '}
-              <Link href='/terms-of-service' className='text-brandName font-bold hover:underline'>
-                Terms of Service
               </Link>
             </p>
             <p className='text-sm mt-2'>

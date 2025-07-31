@@ -16,13 +16,13 @@ export default async function ProteinPowders() {
             and overall score.
           </p>
         </div>
-        <div className='flex flex-col items-center w-full max-w-screen-lg'>
+        <div className='flex flex-col items-center w-full max-w-screen-lg mb-6'>
           <SupplementList products={products} />
           <p className='text-sm mt-8 text-secondaryText'>
             If you believe any information is inaccurate, have suggestions, or believe a product
-            should be included please{' '}
-            <Link href='/contact' className='text-brandName font-bold hover:underline'>
-              contact us
+            should be included please email us at{' '}
+            <Link href='mailto:omaralzoubi001@gmail.com' className='text-brandName underline'>
+              omaralzoubi001@gmail.com
             </Link>
             . We welcome feedback to improve our rankings and accuracy.
           </p>

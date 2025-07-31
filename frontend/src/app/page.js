@@ -2,38 +2,14 @@ import Link from 'next/link'
 import Head from 'next/head'
 
 export default async function Home() {
-  // const res = await fetch('https://api.example.com/top-products')
-  // const topProducts = await res.json()
-
-  const topProducts = [
-    {
-      name: 'Example Protein Powder',
-      ingredients: ['Whey Protein Isolate', 'Natural Flavors', 'Stevia'],
-      pricePerUnit: 0.02,
-      healthScore: 90.2,
-      userScore: 89.6,
-      link: 'https://example.com/product1',
-      overall: 85,
-    },
-    {
-      name: 'Example Plant-Based Protein',
-      ingredients: ['Pea Protein', 'Brown Rice Protein', 'Natural Flavors'],
-      pricePerUnit: 0.03,
-      healthScore: 88.5,
-      userScore: 87.4,
-      link: 'https://example.com/product2',
-      overall: 82,
-    },
-    {
-      name: 'Example Casein Protein',
-      ingredients: ['Micellar Casein', 'Natural Flavors', 'Stevia'],
-      pricePerUnit: 0.04,
-      healthScore: 85.0,
-      userScore: 84.3,
-      link: 'https://example.com/product3',
-      overall: 80,
-    },
-  ]
+  const apiUrl = process.env.API_URL || 'https://localhost:8080/api/v1'
+  const res = await fetch(`${apiUrl}/top-products`, {
+    next: {revalidate: 36000},
+  })
+  if (!res.ok) {
+    throw new Error('Failed to fetch top products')
+  }
+  const topProducts = await res.json()
 
   return (
     <>
@@ -97,7 +73,7 @@ export default async function Home() {
           <h2 className='text-2xl sm:text-3xl font-semibold text-center mb-8 sm:mb-12'>
             Top Ranked Supplements
           </h2>
-          <div className='grid gap-4 sm:gap-0 sm:max-w-[600px] lg:max-w-screen-md mx-auto px-4 gird-cols-1'>
+          <div className='grid gap-4 sm:gap-0 sm:max-w-[680px] lg:max-w-[850px] mx-auto px-4 gird-cols-1'>
             {topProducts.map((product, idx) => (
               <div
                 key={idx}
@@ -195,7 +171,7 @@ export default async function Home() {
         </section>
 
         {/* 5. SEO / Trust Section */}
-        <section className='py-10 sm:py-14 px-4 sm:px-6 sm:mb-12 border-t-2 border-borderColor'>
+        <section className='py-10 sm:py-14 px-4 sm:px-6 sm:mb-18 border-t-2 border-borderColor'>
           <div className='max-w-3xl mx-auto text-center'>
             <h2 className='text-xl sm:text-2xl font-semibold mb-3 sm:mb-4'>
               Why Trust SupplementPicks?
